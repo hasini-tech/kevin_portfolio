@@ -5,7 +5,7 @@ import { profile, strengths } from '../data/profile';
 
 export function AboutSection() {
   return (
-    <section id="about" className="relative min-h-screen overflow-hidden bg-[#0C0C0C] px-5 py-16 sm:px-8 sm:py-24 md:px-10 md:py-28">
+    <section id="about" className="relative min-h-screen overflow-hidden bg-[#0C0C0C] px-5 py-16 sm:px-8 sm:py-20 md:px-10 md:py-24">
       <FadeIn delay={0.1} duration={0.9} x={-80} y={0}>
         <img src="https://shrug-person-78902957.figma.site/_components/v2/ebb2b8f25d8e24d5f0a5ca8af4c950de81aa2fd7/moon_icon.11395d36.png" alt="Moon icon" className="absolute left-[-28px] top-[4%] w-[90px] opacity-45 sm:left-[2%] sm:w-[160px] sm:opacity-100 md:left-[4%] md:w-[210px]" />
       </FadeIn>
@@ -19,7 +19,7 @@ export function AboutSection() {
         <img src="https://shrug-person-78902957.figma.site/_components/v2/ebb2b8f25d8e24d5f0a5ca8af4c950de81aa2fd7/Group_134-1.2e04f3ce.png" alt="3D group" className="absolute bottom-[4%] right-[-32px] w-[96px] opacity-45 sm:right-[6%] sm:w-[170px] sm:opacity-100 md:right-[10%] md:w-[220px]" />
       </FadeIn>
 
-      <div className="relative z-10 flex min-h-[74vh] flex-col items-center justify-center gap-8 text-center sm:min-h-[80vh] sm:gap-14 md:gap-16">
+      <div className="relative z-10 flex min-h-[74vh] flex-col items-center justify-center gap-8 text-center sm:min-h-[78vh] sm:gap-10 md:gap-12">
         <FadeIn delay={0} duration={0.8} y={40}>
           <h2 className="hero-heading text-[3.2rem] font-black uppercase leading-none tracking-[-0.04em] sm:text-[clamp(3rem,12vw,160px)]">About me</h2>
         </FadeIn>

@@ -15,10 +15,10 @@ export function AnimatedText({ text }: AnimatedTextProps) {
   const chars = useMemo(() => text.split(''), [text]);
 
   return (
-    <p ref={ref} className="mx-auto max-w-[560px] text-center text-[clamp(1rem,2vw,1.35rem)] font-medium leading-relaxed text-[#D7E2EA]">
+    <p ref={ref} className="mx-auto max-w-[680px] text-center text-[clamp(1rem,1.7vw,1.25rem)] font-medium leading-relaxed text-[#E8F0F6]">
       {chars.map((char, index) => {
-        const opacity = useTransform(scrollYProgress, [0, 1], [0.2, 1]);
-        const adjusted = useTransform(opacity, (value) => Math.max(0.2, value - index * 0.003));
+        const opacity = useTransform(scrollYProgress, [0, 1], [0.72, 1]);
+        const adjusted = useTransform(opacity, (value) => Math.max(0.72, value - index * 0.0008));
         const springOpacity = useSpring(adjusted, { stiffness: 120, damping: 20 });
 
         return (
